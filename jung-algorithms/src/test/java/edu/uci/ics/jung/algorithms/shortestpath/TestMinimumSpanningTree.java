@@ -21,7 +21,7 @@ public class TestMinimumSpanningTree extends TestCase {
   }
 
   public void testDAG() {
-    MutableNetwork<String, Integer> graph = NetworkBuilder.directed().build();
+    MutableNetwork<String, Integer> graph = NetworkBuilder.undirected().build();
     graph.addNode("B0");
     graph.addEdge("A", "B0", 0);
     graph.addEdge("A", "B1", 1);
